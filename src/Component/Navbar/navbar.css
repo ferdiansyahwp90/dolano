@@ -1,22 +1,22 @@
 :root {
-  --PrimaryColor: hs1(199, 100%, 33%);
-  --SecondaryColor: hs1(199, 100%, 43%);
-  --gradientColor: linear-gradient(to right, rgb(6, 223, 252), rgb(40, 108, 185));
-  --whiteColor: hs1(199, 100%, 33%);
-  --blackColor: hs1(199, 100%, 33%);
-  --textColor: hs1(199, 100%, 33%);
-  --whiteColorDeam: hs1(199, 100%, 33%);
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(199, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(186, 58%, 60%), hsl(199, 100%, 43%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
   --greyText: rgb(190, 190, 190);
   --inputColor: rgb(239, 239, 239);
   --bodyColor: rgb(240, 240, 246);
-  --cardBG: rgb(255, 240, 246);
+  --cardBG: rgb(225, 225, 235);
 }
 
 .header {
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background: var(--whiteColorDeam);
   width: 100%;
   padding: 1rem;
@@ -43,13 +43,13 @@
     height: max-content;
     width: 80%;
     border-radius: 1rem;
-    top: 6rem;
-    left: 5rem;
+    top: -500rem;
+    left: 50%;
     padding: 1rem;
     transform: translate(-50%);
     z-index: 2000;
     box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
   }
   .header .navBar .navLists {
     flex-direction: column;
@@ -85,14 +85,14 @@
   .header .navBar .closeNavbar:hover {
     color: var(--SecondaryColor);
   }
-  .header .activeNavBar {
+  .header .activeNavbar {
     top: 7rem;
   }
 }
-.header .toogleNavbar .icon {
+.header .toggleNavbar .icon {
   font-size: 25px;
   color: var(--PrimaryColor);
 }
-.header .toogleNavbar:hover.icon {
+.header .toggleNavbar:hover.icon {
   color: var(--SecondaryColor);
 }/*# sourceMappingURL=navbar.css.map */
