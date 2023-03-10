@@ -11,7 +11,7 @@
 :root{
     --PrimaryColor : hs1(199, 100%, 33%);
     --SecondaryColor : hs1(199, 100%, 43%);
-    --gradientColor : linear-gradient(to right, hs1(199, 100%, 33%), hs1(199, 100%, 33%));
+    --gradientColor : linear-gradient(to right, rgb(6, 223, 252), rgb(40, 108, 185));
     --whiteColor : hs1(199, 100%, 33%);
     --blackColor : hs1(199, 100%, 33%);
     --textColor : hs1(199, 100%, 33%);
@@ -50,14 +50,15 @@ li{
 }
 
 .grid{
-    display: flex;
+    display: grid;
     align-items: center;
 }
 
 .btn{
-    padding: 6rem 1.5rem;
+    padding: .6rem 1.5rem;
     background : var(--gradientColor);
     border-radius: 3rem;
+    border: none;
     outline: none;
     cursor: pointer;
 }
